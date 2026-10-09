@@ -54,7 +54,7 @@ import ApplicationTracker from "./pages/ApplicationTracker";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/-Eduguide-ai">
 
       <Routes>
 
