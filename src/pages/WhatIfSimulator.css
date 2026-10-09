@@ -1,0 +1,512 @@
+.what-if-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* Navbar */
+
+.what-if-navbar {
+  height: 72px;
+  padding: 0 6%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+}
+
+.what-if-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #4f46e5;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.what-if-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 16px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #334155;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.what-if-back-btn:hover {
+  background: #f1f5f9;
+}
+
+
+/* Main */
+
+.what-if-container {
+  width: min(1100px, 92%);
+  margin: 45px auto;
+}
+
+
+/* Header */
+
+.what-if-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-bottom: 30px;
+}
+
+.what-if-header-icon {
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.what-if-header h1 {
+  margin-bottom: 7px;
+
+  font-size: 30px;
+  color: #0f172a;
+}
+
+.what-if-header p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+
+/* Simulator Card */
+
+.what-if-card {
+  background: #ffffff;
+
+  padding: 30px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+
+  margin-bottom: 35px;
+}
+
+.what-if-card h2 {
+  margin-bottom: 25px;
+
+  color: #0f172a;
+  font-size: 21px;
+}
+
+
+/* Form Groups */
+
+.what-if-group {
+  margin-bottom: 22px;
+}
+
+.what-if-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #334155;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.what-if-group select {
+  width: 100%;
+  height: 50px;
+
+  padding: 0 14px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #1e293b;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.what-if-group select:focus {
+  border-color: #6366f1;
+
+  box-shadow:
+    0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+
+/* Percentage */
+
+.percentage-display {
+  margin-bottom: 10px;
+}
+
+.percentage-display strong {
+  font-size: 27px;
+  color: #4f46e5;
+}
+
+.what-if-group input[type="range"] {
+  width: 100%;
+  accent-color: #4f46e5;
+  cursor: pointer;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 5px;
+
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+
+/* Buttons */
+
+.what-if-actions {
+  display: flex;
+  gap: 12px;
+
+  margin-top: 28px;
+}
+
+.what-if-apply-btn,
+.what-if-reset-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 12px 18px;
+
+  border-radius: 8px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.what-if-apply-btn {
+  border: none;
+
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+.what-if-apply-btn:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+.what-if-reset-btn {
+  border: 1px solid #cbd5e1;
+
+  background: #ffffff;
+  color: #475569;
+}
+
+.what-if-reset-btn:hover {
+  background: #f1f5f9;
+}
+
+
+/* Results Header */
+
+.what-if-results {
+  margin-top: 20px;
+}
+
+.what-if-results-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.what-if-results-header h2 {
+  margin-bottom: 5px;
+
+  color: #0f172a;
+}
+
+.what-if-results-header p {
+  color: #64748b;
+}
+
+.what-if-results-header > span {
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+/* Results Grid */
+
+.what-if-results-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+
+/* Result Card */
+
+.what-if-result-card {
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+
+  transition: 0.2s ease;
+}
+
+.what-if-result-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 28px rgba(15, 23, 42, 0.09);
+}
+
+.what-if-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+}
+
+.what-if-college-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.what-if-card-top > span {
+  font-size: 13px;
+  font-weight: 700;
+
+  color: #64748b;
+}
+
+.what-if-result-card h3 {
+  min-height: 48px;
+
+  margin-bottom: 10px;
+
+  color: #0f172a;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+
+/* Location */
+
+.what-if-location {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* Score */
+
+.what-if-score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 20px 0;
+
+  padding: 14px;
+
+  border-radius: 10px;
+
+  background: #f8fafc;
+}
+
+.what-if-score strong {
+  font-size: 24px;
+  color: #4f46e5;
+}
+
+.what-if-score span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+
+/* View Button */
+
+.what-if-result-card > button {
+  width: 100%;
+
+  padding: 11px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #4f46e5;
+  color: #ffffff;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.what-if-result-card > button:hover {
+  background: #4338ca;
+}
+
+
+/* Note */
+
+.what-if-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  margin-top: 30px;
+  padding: 18px 20px;
+
+  border: 1px solid #c7d2fe;
+  border-radius: 12px;
+
+  background: #eef2ff;
+
+  color: #4338ca;
+}
+
+.what-if-note p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+
+/* Loading */
+
+.what-if-page .what-if-loading {
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #4f46e5;
+
+  text-align: center;
+}
+
+.what-if-loading h2 {
+  margin-top: 15px;
+  color: #0f172a;
+}
+
+.what-if-loading p {
+  margin-top: 6px;
+  color: #64748b;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .what-if-results-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+
+  .what-if-navbar {
+    padding: 0 4%;
+  }
+
+  .what-if-logo span {
+    font-size: 18px;
+  }
+
+  .what-if-container {
+    margin: 30px auto;
+  }
+
+  .what-if-header {
+    align-items: flex-start;
+  }
+
+  .what-if-header h1 {
+    font-size: 25px;
+  }
+
+  .what-if-card {
+    padding: 22px;
+  }
+
+  .what-if-actions {
+    flex-direction: column;
+  }
+
+  .what-if-results-header {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .what-if-results-grid {
+    grid-template-columns: 1fr;
+  }
+}

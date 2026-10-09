@@ -1,0 +1,765 @@
+/* =========================
+   Recommendations Page
+========================= */
+
+.recommendations-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+
+/* =========================
+   Navbar
+========================= */
+
+.recommendations-navbar {
+  height: 72px;
+  padding: 0 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: white;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 100;
+}
+
+
+.recommendations-logo {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  color: #6366f1;
+
+  font-size: 22px;
+  font-weight: 800;
+}
+
+
+.recommendations-back-btn {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 9px 16px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 8px;
+
+  color: #334155;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.recommendations-back-btn:hover {
+  background: #f8fafc;
+}
+
+
+/* =========================
+   Main Container
+========================= */
+
+.recommendations-container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 45px 30px 70px;
+}
+
+
+/* =========================
+   Page Heading
+========================= */
+
+.recommendations-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 30px;
+}
+
+
+.recommendations-heading-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #eef2ff;
+
+  color: #6366f1;
+
+  border-radius: 15px;
+}
+
+
+.recommendations-heading h1 {
+  font-size: 34px;
+
+  margin-bottom: 7px;
+}
+
+
+.recommendations-heading p {
+  color: #64748b;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   Profile Summary
+========================= */
+
+.profile-summary {
+  background: white;
+
+  padding: 25px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 16px;
+
+  margin-bottom: 20px;
+}
+
+
+.summary-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 22px;
+}
+
+
+.summary-title > svg {
+  color: #6366f1;
+}
+
+
+.summary-title h2 {
+  font-size: 19px;
+
+  margin-bottom: 4px;
+}
+
+
+.summary-title p {
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+
+.summary-items {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 15px;
+}
+
+
+.summary-item {
+  padding: 15px;
+
+  background: #f8fafc;
+
+  border-radius: 10px;
+}
+
+
+.summary-item span {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  margin-bottom: 6px;
+}
+
+
+.summary-item strong {
+  display: block;
+
+  color: #1e293b;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   AI Explanation
+========================= */
+
+.ai-explanation {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 14px;
+
+  padding: 20px;
+
+  background: #eef2ff;
+
+  border: 1px solid #c7d2fe;
+
+  border-radius: 13px;
+
+  margin-bottom: 40px;
+}
+
+
+.ai-explanation-icon {
+  width: 44px;
+  height: 44px;
+
+  min-width: 44px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+
+  color: #6366f1;
+
+  border-radius: 10px;
+}
+
+
+.ai-explanation h2 {
+  font-size: 16px;
+
+  margin-bottom: 5px;
+}
+
+
+.ai-explanation p {
+  color: #475569;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   Recommendation Group
+========================= */
+
+.recommendation-group {
+  margin-bottom: 40px;
+}
+
+
+.group-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-bottom: 18px;
+}
+
+
+.group-icon {
+  width: 45px;
+  height: 45px;
+
+  min-width: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+}
+
+
+.group-header h2 {
+  font-size: 21px;
+
+  margin-bottom: 4px;
+}
+
+
+.group-header p {
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+
+.group-count {
+  margin-left: auto;
+
+  min-width: 28px;
+  height: 28px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 8px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+/* Safe */
+
+.safe-header .group-icon {
+  background: #f0fdf4;
+  color: #16a34a;
+}
+
+
+.safe-header .group-count {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+
+/* Target */
+
+.target-header .group-icon {
+  background: #fffbeb;
+  color: #d97706;
+}
+
+
+.target-header .group-count {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+
+/* Ambitious */
+
+.ambitious-header .group-icon {
+  background: #eef2ff;
+  color: #6366f1;
+}
+
+
+.ambitious-header .group-count {
+  background: #e0e7ff;
+  color: #4f46e5;
+}
+
+
+/* =========================
+   Recommendation Cards
+========================= */
+
+.recommendation-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+
+.recommendation-card {
+  background: white;
+
+  padding: 23px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 15px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.recommendation-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #c7d2fe;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+/* Card Header */
+
+.recommendation-card-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 17px;
+}
+
+
+.recommendation-college-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #eef2ff;
+
+  color: #6366f1;
+
+  border-radius: 12px;
+}
+
+
+.recommendation-match {
+  text-align: right;
+}
+
+
+.recommendation-match span {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 11px;
+
+  margin-bottom: 2px;
+}
+
+
+.recommendation-match strong {
+  display: block;
+
+  color: #16a34a;
+
+  font-size: 25px;
+}
+
+
+/* College Name */
+
+.recommendation-card h3 {
+  font-size: 18px;
+
+  line-height: 1.4;
+
+  margin-bottom: 16px;
+
+  color: #1e293b;
+}
+
+
+/* College Information */
+
+.recommendation-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 10px;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+
+.recommendation-info svg {
+  color: #6366f1;
+
+  min-width: 16px;
+}
+
+
+/* Reason */
+
+.recommendation-reason {
+  margin-top: 18px;
+
+  padding: 15px;
+
+  background: #f8fafc;
+
+  border-radius: 10px;
+}
+
+
+.reason-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: #6366f1;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  margin-bottom: 7px;
+}
+
+
+.recommendation-reason p {
+  color: #475569;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* Actions */
+
+.recommendation-actions {
+  margin-top: 18px;
+}
+
+
+.view-recommendation-btn {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  width: 100%;
+
+  padding: 10px;
+
+  background: #6366f1;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.view-recommendation-btn:hover {
+  background: #4f46e5;
+}
+
+
+/* =========================
+   What-If Card
+========================= */
+
+.what-if-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 26px;
+
+  background: #6366f1;
+
+  color: white;
+
+  border-radius: 16px;
+
+  margin-top: 10px;
+}
+
+
+.what-if-icon {
+  width: 52px;
+  height: 52px;
+
+  min-width: 52px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  border-radius: 12px;
+}
+
+
+.what-if-content {
+  flex: 1;
+}
+
+
+.what-if-content h2 {
+  font-size: 19px;
+
+  margin-bottom: 6px;
+}
+
+
+.what-if-content p {
+  color: #e0e7ff;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  max-width: 650px;
+}
+
+
+.what-if-card > button {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 11px 18px;
+
+  background: white;
+
+  color: #6366f1;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+
+.what-if-card > button:hover {
+  background: #f8fafc;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 900px) {
+
+  .summary-items {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .recommendations-navbar {
+    padding: 0 20px;
+  }
+
+
+  .recommendations-logo {
+    font-size: 18px;
+  }
+
+
+  .recommendations-container {
+    padding: 30px 20px 50px;
+  }
+
+
+  .recommendations-heading {
+    align-items: flex-start;
+  }
+
+
+  .recommendations-heading h1 {
+    font-size: 29px;
+  }
+
+
+  .summary-items {
+    grid-template-columns: 1fr;
+  }
+
+
+  .recommendation-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .ai-explanation {
+    flex-direction: column;
+  }
+
+
+  .what-if-card {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .what-if-card > button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+}

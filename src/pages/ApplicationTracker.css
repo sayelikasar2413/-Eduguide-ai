@@ -1,0 +1,814 @@
+/* =========================
+   Application Tracker Page
+========================= */
+
+.application-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+
+/* =========================
+   Navbar
+========================= */
+
+.application-navbar {
+  height: 72px;
+  padding: 0 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+.application-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #6366f1;
+
+  font-size: 22px;
+  font-weight: 800;
+}
+
+
+.application-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 9px 16px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+
+  color: #334155;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.application-back-btn:hover {
+  background: #f8fafc;
+}
+
+
+/* =========================
+   Main Container
+========================= */
+
+.application-container {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 45px 30px 70px;
+}
+
+
+/* =========================
+   Heading
+========================= */
+
+.application-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 30px;
+}
+
+
+.application-heading-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eef2ff;
+
+  color: #6366f1;
+
+  border-radius: 15px;
+}
+
+
+.application-heading h1 {
+  font-size: 34px;
+
+  margin-bottom: 7px;
+}
+
+
+.application-heading p {
+  color: #64748b;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   Summary
+========================= */
+
+.application-summary {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+
+  margin-bottom: 35px;
+}
+
+
+.application-summary-card {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 20px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 13px;
+}
+
+
+.application-summary-icon {
+  width: 46px;
+  height: 46px;
+
+  min-width: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eef2ff;
+
+  color: #6366f1;
+
+  border-radius: 10px;
+}
+
+
+.application-summary-card span {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  margin-bottom: 3px;
+}
+
+
+.application-summary-card strong {
+  display: block;
+
+  font-size: 24px;
+
+  margin-bottom: 2px;
+}
+
+
+.application-summary-card p {
+  color: #94a3b8;
+
+  font-size: 11px;
+}
+
+
+/* =========================
+   Applications Section
+========================= */
+
+.applications-section {
+  margin-bottom: 35px;
+}
+
+
+.applications-section-header {
+  margin-bottom: 17px;
+}
+
+
+.applications-section-header h2 {
+  font-size: 21px;
+
+  margin-bottom: 4px;
+}
+
+
+.applications-section-header p {
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+
+/* =========================
+   Application List
+========================= */
+
+.applications-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+/* =========================
+   Application Card
+========================= */
+
+.application-card {
+  padding: 23px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+
+/* =========================
+   Card Header
+========================= */
+
+.application-card-header {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #f1f5f9;
+}
+
+
+.application-card-header h3 {
+  font-size: 18px;
+
+  margin-bottom: 5px;
+}
+
+
+.application-card-header p {
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+
+.application-status {
+  padding: 6px 11px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+.application-status.completed {
+  background: #dcfce7;
+
+  color: #15803d;
+}
+
+
+.application-status.progress {
+  background: #eef2ff;
+
+  color: #6366f1;
+}
+
+
+.application-status.not-started {
+  background: #f1f5f9;
+
+  color: #64748b;
+}
+
+
+/* =========================
+   Progress
+========================= */
+
+.application-progress-section {
+  padding: 20px 0;
+}
+
+
+.application-progress-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+}
+
+
+.application-progress-top span {
+  color: #475569;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+.application-progress-top strong {
+  color: #6366f1;
+
+  font-size: 13px;
+}
+
+
+.application-progress-bar {
+  height: 9px;
+
+  background: #e2e8f0;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+
+.application-progress-bar div {
+  height: 100%;
+
+  background: #6366f1;
+
+  border-radius: 20px;
+
+  transition: width 0.3s ease;
+}
+
+
+/* =========================
+   Steps
+========================= */
+
+.application-steps {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 8px;
+
+  padding: 10px 0 22px;
+}
+
+
+.application-step {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 10px 5px;
+
+  min-height: 95px;
+}
+
+
+.application-step:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  top: 20px;
+
+  left: calc(50% + 20px);
+
+  width: calc(100% - 10px);
+
+  height: 2px;
+
+  background: #e2e8f0;
+}
+
+
+.completed-step:not(:last-child)::after {
+  background: #86efac;
+}
+
+
+.step-check-btn {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+
+  border: none;
+
+  color: #cbd5e1;
+
+  cursor: pointer;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+.completed-step .step-check-btn {
+  color: #16a34a;
+}
+
+
+.step-content span {
+  display: block;
+
+  color: #94a3b8;
+
+  font-size: 10px;
+
+  margin-top: 4px;
+
+  margin-bottom: 3px;
+}
+
+
+.step-content h4 {
+  color: #475569;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+
+  font-weight: 600;
+}
+
+
+.completed-step .step-content h4 {
+  color: #15803d;
+}
+
+
+/* =========================
+   Card Actions
+========================= */
+
+.application-card-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #f1f5f9;
+}
+
+
+.view-application-btn,
+.application-roadmap-btn {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 9px 13px;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.view-application-btn {
+  background: white;
+
+  color: #475569;
+
+  border: 1px solid #e2e8f0;
+}
+
+
+.view-application-btn:hover {
+  background: #f8fafc;
+}
+
+
+.application-roadmap-btn {
+  background: #6366f1;
+
+  color: white;
+
+  border: 1px solid #6366f1;
+}
+
+
+.application-roadmap-btn:hover {
+  background: #4f46e5;
+}
+
+
+/* =========================
+   Start Application Card
+========================= */
+
+.start-application-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  padding: 25px;
+
+  background: #6366f1;
+
+  color: white;
+
+  border-radius: 16px;
+
+  margin-top: 10px;
+}
+
+
+.start-application-icon {
+  width: 50px;
+  height: 50px;
+
+  min-width: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  border-radius: 11px;
+}
+
+
+.start-application-content {
+  flex: 1;
+}
+
+
+.start-application-content h2 {
+  font-size: 19px;
+
+  margin-bottom: 5px;
+}
+
+
+.start-application-content p {
+  color: #e0e7ff;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+.start-application-card > button {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 11px 17px;
+
+  background: white;
+
+  color: #6366f1;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+
+.start-application-card > button:hover {
+  background: #f8fafc;
+}
+
+
+/* =========================
+   Note
+========================= */
+
+.application-note {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  margin-top: 18px;
+
+  color: #94a3b8;
+}
+
+
+.application-note svg {
+  margin-top: 5px;
+
+  min-width: 8px;
+
+  fill: #94a3b8;
+}
+
+
+.application-note p {
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 900px) {
+
+  .application-steps {
+    grid-template-columns: 1fr;
+  }
+
+
+  .application-step {
+    flex-direction: row;
+
+    align-items: center;
+
+    text-align: left;
+
+    min-height: auto;
+
+    padding: 7px 0;
+  }
+
+
+  .application-step:not(:last-child)::after {
+    top: 47px;
+
+    left: 20px;
+
+    width: 2px;
+
+    height: calc(100% - 20px);
+  }
+
+
+  .step-check-btn {
+    flex-shrink: 0;
+  }
+
+
+  .step-content {
+    padding-left: 10px;
+  }
+
+
+  .step-content span {
+    margin-top: 0;
+  }
+
+}
+
+
+@media (max-width: 750px) {
+
+  .application-navbar {
+    padding: 0 20px;
+  }
+
+
+  .application-logo {
+    font-size: 18px;
+  }
+
+
+  .application-container {
+    padding: 30px 20px 50px;
+  }
+
+
+  .application-heading h1 {
+    font-size: 29px;
+  }
+
+
+  .application-summary {
+    grid-template-columns: 1fr;
+  }
+
+
+  .application-card-header {
+    flex-direction: column;
+  }
+
+
+  .application-card-actions {
+    flex-direction: column;
+  }
+
+
+  .view-application-btn,
+  .application-roadmap-btn {
+    justify-content: center;
+
+    width: 100%;
+  }
+
+
+  .start-application-card {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .start-application-card > button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+}
+
+
+@media (max-width: 450px) {
+
+  .application-card {
+    padding: 18px;
+  }
+
+
+  .application-heading {
+    align-items: flex-start;
+  }
+
+
+  .application-progress-section {
+    padding: 17px 0;
+  }
+
+}

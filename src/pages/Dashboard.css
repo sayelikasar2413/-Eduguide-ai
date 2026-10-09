@@ -1,0 +1,598 @@
+/* =========================================
+   EDUGUIDE AI DASHBOARD
+========================================= */
+
+.dashboard-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.dashboard-navbar {
+  height: 72px;
+  padding: 0 6%;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+/* Logo */
+
+.dashboard-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #4f46e5;
+
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.dashboard-brand svg {
+  stroke-width: 2.5;
+}
+
+
+/* Navbar */
+
+.dashboard-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard-nav-button {
+  border: 1px solid #cbd5e1;
+
+  background: #ffffff;
+  color: #334155;
+
+  height: 42px;
+  padding: 0 16px;
+
+  border-radius: 9px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.dashboard-nav-button:hover {
+  background: #eef2ff;
+  color: #4f46e5;
+  border-color: #818cf8;
+}
+
+.dashboard-nav-button.active {
+  background: #eef2ff;
+  color: #4f46e5;
+  border-color: #818cf8;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.dashboard-main {
+  width: 92%;
+  max-width: 1250px;
+
+  margin: auto;
+
+  padding: 45px 0 70px;
+}
+
+
+/* =========================================
+   WELCOME
+========================================= */
+
+.dashboard-welcome {
+  margin-bottom: 32px;
+}
+
+.dashboard-small-title {
+  color: #6366f1;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 8px;
+}
+
+.dashboard-welcome h1 {
+  color: #0f172a;
+
+  font-size: 38px;
+  font-weight: 750;
+
+  margin-bottom: 10px;
+}
+
+.dashboard-subtitle {
+  color: #64748b;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   MAIN FEATURE CARDS
+========================================= */
+
+.dashboard-main-cards {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 22px;
+
+  margin-bottom: 55px;
+}
+
+
+.dashboard-main-card {
+  min-height: 175px;
+
+  padding: 27px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 16px;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 20px;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+}
+
+
+.dashboard-main-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #a5b4fc;
+
+  box-shadow: 0 15px 30px rgba(15, 23, 42, 0.10);
+}
+
+
+/* Feature icons */
+
+.dashboard-card-icon {
+  width: 62px;
+  height: 62px;
+
+  flex-shrink: 0;
+
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Blue */
+
+.dashboard-card-icon.blue {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+
+/* Purple */
+
+.dashboard-card-icon.purple {
+  background: #f5f3ff;
+  color: #7c3aed;
+}
+
+
+/* Green */
+
+.dashboard-card-icon.green {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+
+/* Orange */
+
+.dashboard-card-icon.orange {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+
+/* Feature content */
+
+.dashboard-card-content {
+  flex: 1;
+}
+
+.dashboard-card-content h2 {
+  color: #0f172a;
+
+  font-size: 21px;
+
+  margin-bottom: 8px;
+}
+
+.dashboard-card-content p {
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  margin-bottom: 16px;
+}
+
+
+/* Card link */
+
+.dashboard-card-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #4f46e5;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   COLLEGE JOURNEY
+========================================= */
+
+.dashboard-journey {
+  margin-top: 10px;
+}
+
+
+.dashboard-section-heading {
+  text-align: center;
+
+  margin-bottom: 28px;
+}
+
+.dashboard-section-heading h2 {
+  color: #0f172a;
+
+  font-size: 32px;
+
+  margin-bottom: 8px;
+}
+
+.dashboard-section-heading p {
+  color: #64748b;
+
+  font-size: 16px;
+}
+
+
+/* =========================================
+   JOURNEY CARDS
+========================================= */
+
+.dashboard-journey-grid {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 15px;
+}
+
+
+.dashboard-journey-card {
+  min-height: 170px;
+
+  padding: 22px 15px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+}
+
+
+.dashboard-journey-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #a5b4fc;
+
+  background: #fafaff;
+
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.09);
+}
+
+
+/* Journey icons */
+
+.journey-icon {
+  width: 50px;
+  height: 50px;
+
+  margin-bottom: 14px;
+
+  border-radius: 13px;
+
+  background: #eef2ff;
+
+  color: #4f46e5;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.dashboard-journey-card h3 {
+  color: #0f172a;
+
+  font-size: 16px;
+
+  margin-bottom: 7px;
+}
+
+
+.dashboard-journey-card p {
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.45;
+}
+
+
+/* =========================================
+   AI ASSISTANT
+========================================= */
+
+.dashboard-ai-card {
+  max-width: 470px;
+
+  margin: 25px auto 0;
+
+  padding: 18px 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #c7d2fe;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+
+  box-shadow: 0 5px 18px rgba(79, 70, 229, 0.07);
+}
+
+
+.dashboard-ai-card:hover {
+  transform: translateY(-4px);
+
+  background: #fafaff;
+
+  box-shadow: 0 12px 28px rgba(79, 70, 229, 0.12);
+}
+
+
+/* AI icon */
+
+.ai-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #eef2ff;
+
+  color: #4f46e5;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* AI text */
+
+.dashboard-ai-card > div:nth-child(2) {
+  flex: 1;
+}
+
+.dashboard-ai-card h3 {
+  color: #0f172a;
+
+  font-size: 17px;
+
+  margin-bottom: 5px;
+}
+
+.dashboard-ai-card p {
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1050px) {
+
+  .dashboard-journey-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+@media (max-width: 850px) {
+
+  .dashboard-navbar {
+    padding: 0 25px;
+  }
+
+  .dashboard-main {
+    width: 94%;
+  }
+
+  .dashboard-main-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-journey-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .dashboard-navbar {
+    height: auto;
+
+    padding: 16px 20px;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+
+  .dashboard-brand {
+    font-size: 22px;
+  }
+
+
+  .dashboard-nav {
+    width: 100%;
+  }
+
+
+  .dashboard-nav-button {
+    flex: 1;
+
+    justify-content: center;
+
+    padding: 0 8px;
+
+    font-size: 12px;
+  }
+
+
+  .dashboard-main {
+    padding-top: 30px;
+  }
+
+
+  .dashboard-welcome h1 {
+    font-size: 29px;
+  }
+
+
+  .dashboard-subtitle {
+    font-size: 15px;
+  }
+
+
+  .dashboard-main-card {
+    padding: 21px;
+  }
+
+
+  .dashboard-card-icon {
+    width: 53px;
+    height: 53px;
+  }
+
+
+  .dashboard-section-heading h2 {
+    font-size: 27px;
+  }
+
+
+  .dashboard-journey-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .dashboard-ai-card {
+    width: 100%;
+  }
+
+}

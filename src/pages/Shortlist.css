@@ -1,0 +1,939 @@
+.shortlist-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.shortlist-navbar {
+  height: 76px;
+
+  background: white;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  padding: 0 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 20;
+}
+
+
+.shortlist-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  cursor: pointer;
+}
+
+
+.shortlist-logo-icon {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 11px;
+
+  background: #6366f1;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.shortlist-logo h2 {
+  font-size: 20px;
+  color: #111827;
+}
+
+
+.shortlist-logo span {
+  display: block;
+
+  margin-top: 2px;
+
+  font-size: 11px;
+  color: #64748b;
+}
+
+
+.shortlist-back {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 10px 15px;
+
+  border-radius: 9px;
+
+  border: 1px solid #e2e8f0;
+
+  background: white;
+
+  color: #475569;
+
+  font-weight: 600;
+}
+
+
+.shortlist-back:hover {
+  background: #f8fafc;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.shortlist-container {
+  width: 86%;
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 45px 0 70px;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.shortlist-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 28px;
+}
+
+
+.shortlist-label {
+  color: #6366f1;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+.shortlist-heading h1 {
+  margin-top: 7px;
+
+  font-size: 36px;
+
+  color: #111827;
+}
+
+
+.shortlist-heading p {
+  margin-top: 9px;
+
+  max-width: 650px;
+
+  color: #64748b;
+
+  line-height: 1.6;
+}
+
+
+.shortlist-count {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 20px;
+
+  border-radius: 14px;
+
+  background: #eef2ff;
+
+  color: #6366f1;
+}
+
+
+.shortlist-count strong {
+  display: block;
+
+  font-size: 22px;
+
+  color: #4338ca;
+}
+
+
+.shortlist-count span {
+  display: block;
+
+  font-size: 11px;
+
+  color: #64748b;
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+.shortlist-summary {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 16px;
+}
+
+
+.summary-item {
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 14px;
+
+  padding: 18px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.summary-icon {
+  width: 43px;
+  height: 43px;
+
+  border-radius: 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.summary-icon.purple {
+  background: #eef2ff;
+  color: #6366f1;
+}
+
+
+.summary-icon.green {
+  background: #ecfdf5;
+  color: #10b981;
+}
+
+
+.summary-icon.orange {
+  background: #fff7ed;
+  color: #f97316;
+}
+
+
+.summary-icon.blue {
+  background: #eff6ff;
+  color: #3b82f6;
+}
+
+
+.summary-item span {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+
+.summary-item strong {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #1e293b;
+
+  font-size: 17px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.shortlist-section {
+  margin-top: 35px;
+}
+
+
+.section-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+}
+
+
+.section-header h2 {
+  font-size: 21px;
+
+  color: #111827;
+}
+
+
+.section-header p {
+  margin-top: 5px;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+
+.compare-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 10px 15px;
+
+  border: 1px solid #6366f1;
+
+  background: #6366f1;
+
+  color: white;
+
+  border-radius: 9px;
+
+  font-weight: 600;
+}
+
+
+.compare-button:hover {
+  background: #4f46e5;
+}
+
+
+/* =========================
+   COLLEGE GRID
+========================= */
+
+.shortlist-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+
+.shortlist-card {
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 17px;
+
+  padding: 22px;
+
+  transition: 0.2s;
+}
+
+
+.shortlist-card:hover {
+  border-color: #c7d2fe;
+
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   CARD TOP
+========================= */
+
+.card-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+
+.college-small-icon {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 12px;
+
+  background: #eef2ff;
+
+  color: #6366f1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.college-small-icon span {
+  font-size: 20px;
+
+  font-weight: 800;
+}
+
+
+.remove-button {
+  width: 35px;
+  height: 35px;
+
+  border-radius: 9px;
+
+  border: 1px solid #fee2e2;
+
+  background: #fff5f5;
+
+  color: #ef4444;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.remove-button:hover {
+  background: #fee2e2;
+}
+
+
+/* =========================
+   COLLEGE INFO
+========================= */
+
+.shortlist-college-info {
+  margin-top: 17px;
+}
+
+
+.college-type {
+  display: inline-block;
+
+  padding: 4px 8px;
+
+  background: #f1f5f9;
+
+  color: #64748b;
+
+  border-radius: 5px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+
+.shortlist-college-info h3 {
+  margin-top: 9px;
+
+  color: #111827;
+
+  font-size: 18px;
+
+  line-height: 1.35;
+}
+
+
+.location-row {
+  margin-top: 7px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+
+.course-name {
+  margin-top: 8px;
+
+  color: #6366f1;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   MATCH
+========================= */
+
+.match-row {
+  margin-top: 18px;
+}
+
+
+.match-row > div:first-child {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+
+.match-row span {
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+
+.match-row strong {
+  color: #4f46e5;
+
+  font-size: 18px;
+}
+
+
+.match-bar {
+  width: 100%;
+
+  height: 7px;
+
+  margin-top: 7px;
+
+  background: #e2e8f0;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+
+.match-fill {
+  height: 100%;
+
+  background: #6366f1;
+
+  border-radius: 10px;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.college-details-row {
+  margin-top: 18px;
+
+  padding-top: 15px;
+
+  border-top: 1px solid #f1f5f9;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+
+.college-details-row span {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+
+.college-details-row strong {
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  margin-top: 4px;
+
+  color: #1e293b;
+
+  font-size: 13px;
+}
+
+
+.rating-value svg {
+  color: #f59e0b;
+}
+
+
+/* =========================
+   ACTIONS
+========================= */
+
+.card-actions {
+  display: grid;
+
+  grid-template-columns: 1fr auto;
+
+  gap: 9px;
+
+  margin-top: 18px;
+}
+
+
+.view-button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 10px;
+
+  border-radius: 9px;
+
+  border: 1px solid #6366f1;
+
+  background: #6366f1;
+
+  color: white;
+
+  font-weight: 600;
+}
+
+
+.view-button:hover {
+  background: #4f46e5;
+}
+
+
+.why-button {
+  padding: 10px 14px;
+
+  border-radius: 9px;
+
+  border: 1px solid #cbd5e1;
+
+  background: white;
+
+  color: #475569;
+
+  font-weight: 600;
+}
+
+
+.why-button:hover {
+  background: #f8fafc;
+}
+
+
+/* =========================
+   AI SECTION
+========================= */
+
+.shortlist-ai {
+  margin-top: 28px;
+
+  padding: 23px;
+
+  border-radius: 17px;
+
+  border: 1px solid #c7d2fe;
+
+  background: linear-gradient(
+    135deg,
+    #eef2ff,
+    #f5f3ff
+  );
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+}
+
+
+.ai-shortlist-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  border-radius: 13px;
+
+  background: #6366f1;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.ai-shortlist-content {
+  flex: 1;
+}
+
+
+.ai-shortlist-content span {
+  color: #6366f1;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+
+.ai-shortlist-content h2 {
+  margin-top: 5px;
+
+  color: #1e1b4b;
+
+  font-size: 18px;
+}
+
+
+.ai-shortlist-content p {
+  margin-top: 5px;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+.shortlist-ai button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 10px 15px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #6366f1;
+
+  color: white;
+
+  font-weight: 600;
+}
+
+
+.shortlist-ai button:hover {
+  background: #4f46e5;
+}
+
+
+/* =========================
+   BOTTOM ACTIONS
+========================= */
+
+.shortlist-bottom {
+  margin-top: 25px;
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+}
+
+
+.find-more-button,
+.roadmap-button {
+  padding: 11px 16px;
+
+  border-radius: 9px;
+
+  font-weight: 600;
+}
+
+
+.find-more-button {
+  background: white;
+
+  border: 1px solid #cbd5e1;
+
+  color: #475569;
+}
+
+
+.find-more-button:hover {
+  background: #f8fafc;
+}
+
+
+.roadmap-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  border: 1px solid #6366f1;
+
+  background: #6366f1;
+
+  color: white;
+}
+
+
+.roadmap-button:hover {
+  background: #4f46e5;
+}
+
+
+/* =========================
+   DISCLAIMER
+========================= */
+
+.shortlist-disclaimer {
+  margin-top: 20px;
+
+  padding: 14px 16px;
+
+  border-radius: 10px;
+
+  background: #fffbeb;
+
+  border: 1px solid #fde68a;
+
+  color: #92400e;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+.shortlist-disclaimer strong {
+  margin-right: 5px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .shortlist-container {
+    width: 92%;
+  }
+
+
+  .shortlist-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .shortlist-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .shortlist-navbar {
+    padding: 0 4%;
+  }
+
+
+  .shortlist-logo span {
+    display: none;
+  }
+
+
+  .shortlist-heading {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+
+  .shortlist-heading h1 {
+    font-size: 29px;
+  }
+
+
+  .shortlist-summary {
+    grid-template-columns: 1fr;
+  }
+
+
+  .section-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 12px;
+  }
+
+
+  .compare-button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+
+  .shortlist-ai {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .shortlist-ai button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+
+  .shortlist-bottom {
+    flex-direction: column;
+  }
+
+
+  .find-more-button,
+  .roadmap-button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+}

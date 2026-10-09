@@ -1,0 +1,377 @@
+/* ================================
+   Explain College Page
+================================ */
+
+.explain-college-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+/* ================================
+   Navbar
+================================ */
+
+.explain-navbar {
+  height: 70px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px;
+}
+
+.explain-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #4f46e5;
+}
+
+.explain-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 18px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+
+  font-weight: 600;
+}
+
+.explain-back-btn:hover {
+  background: #e0e7ff;
+}
+
+/* ================================
+   Main Container
+================================ */
+
+.explain-container {
+  max-width: 950px;
+  margin: 0 auto;
+
+  padding: 45px 24px;
+}
+
+/* ================================
+   Header
+================================ */
+
+.explain-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-bottom: 30px;
+}
+
+.explain-ai-icon {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.explain-header h1 {
+  margin-bottom: 6px;
+
+  font-size: 32px;
+  color: #0f172a;
+}
+
+.explain-header p {
+  color: #64748b;
+}
+
+/* ================================
+   College Card
+================================ */
+
+.explain-college-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 24px;
+
+  margin-bottom: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+
+  box-shadow:
+    0 4px 12px rgba(15, 23, 42, 0.05);
+}
+
+.explain-college-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 14px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.explain-college-card h2 {
+  margin-bottom: 8px;
+
+  font-size: 21px;
+  color: #0f172a;
+}
+
+.explain-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ================================
+   Match Card
+================================ */
+
+.match-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  padding: 28px;
+
+  margin-bottom: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #c7d2fe;
+  border-radius: 14px;
+
+  box-shadow:
+    0 5px 16px rgba(79, 70, 229, 0.08);
+}
+
+.match-score {
+  width: 125px;
+  height: 125px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #eef2ff;
+  border: 8px solid #c7d2fe;
+}
+
+.match-number {
+  font-size: 28px;
+  font-weight: 800;
+
+  color: #4f46e5;
+}
+
+.match-label {
+  margin-top: 3px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  color: #64748b;
+}
+
+.match-description h2 {
+  margin-bottom: 8px;
+
+  color: #0f172a;
+}
+
+.match-description p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* ================================
+   Why College Section
+================================ */
+
+.why-college-section {
+  padding: 28px;
+
+  margin-bottom: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+}
+
+.why-college-section > h2 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 22px;
+
+  font-size: 21px;
+  color: #0f172a;
+}
+
+.why-college-section > h2 svg {
+  color: #4f46e5;
+}
+
+/* ================================
+   Reasons
+================================ */
+
+.reason-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.reason-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  padding: 18px;
+
+  border-radius: 10px;
+
+  background: #f8fafc;
+}
+
+.reason-item > svg {
+  flex-shrink: 0;
+
+  margin-top: 2px;
+
+  color: #16a34a;
+}
+
+.reason-item h3 {
+  margin-bottom: 5px;
+
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.reason-item p {
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ================================
+   Next Steps
+================================ */
+
+.next-steps-section {
+  padding: 28px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+}
+
+.next-steps-section h2 {
+  margin-bottom: 18px;
+
+  color: #0f172a;
+  font-size: 21px;
+}
+
+.next-step-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.next-step-buttons button {
+  padding: 12px 18px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #4f46e5;
+  color: #ffffff;
+
+  font-weight: 600;
+}
+
+.next-step-buttons button:hover {
+  background: #4338ca;
+}
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 600px) {
+
+  .explain-navbar {
+    padding: 0 20px;
+  }
+
+  .explain-logo {
+    font-size: 18px;
+  }
+
+  .explain-container {
+    padding: 30px 16px;
+  }
+
+  .explain-header h1 {
+    font-size: 26px;
+  }
+
+  .match-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .next-step-buttons {
+    flex-direction: column;
+  }
+
+  .next-step-buttons button {
+    width: 100%;
+  }
+
+}
